@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/tareas', function () {
+    return view('index');
+});
 Route::get('/inicio', function () {
     $frutas = ['manzana', 'platano', 'maranja', 'piña'];
     return view('home', [
